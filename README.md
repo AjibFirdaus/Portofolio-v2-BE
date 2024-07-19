@@ -27,6 +27,7 @@ Ikuti langkah-langkah berikut untuk menginstal dan menjalankan proyek ini secara
     ```bash
     npx prisma migrate dev
     npx prisma generate
+    sebelum run seed perlu ubah terlebih dahulu di seed.js ubah bagian photo (path photo), username, password (hashed password) setelah itu
     npm run seed
     ```
 

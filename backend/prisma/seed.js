@@ -7,13 +7,13 @@ require("dotenv").config();
 const prisma = new PrismaClient();
 
 async function main() {
-  const hashedPassword = await bcrypt.hash("updatecuy#", 10);
+  const hashedPassword = await bcrypt.hash("bikin password", 10);
 
   // Prepare data for seeding
   const seedData = [
     prisma.admin.create({
       data: {
-        username: "ajib",
+        username: "username anda",
         password: hashedPassword,
       },
     }),
